@@ -1,152 +1,183 @@
-/* Design by Howar31  http://about.me/howar31 */
-/* 喜歡本佈景的噗友歡迎使用並自行做小修改以符合個人需求，但希望能保留原作者Howar31的署名，感謝:D */
-/* Welcome to use and modify this CSS theme.  Please do not remove the name of designer, Howar31.  Thanks. :D */
+/************************************************/
+/* Design by Howar31  http://about.me/howar31 	*/
+/* Version 20130312				*/
+/* Recommanded Resolution: 950x700 +		*/
+/************************************************/
 
-/* 本佈景在 Ubuntu 11.04 Eclipse 3.7.0 底下開發完成，Chrome 15.0.865.0 dev 完整測試 */
-/* 因使用大量CSS3語法，各家瀏覽器支援度不同: Chrome可以顯示本佈景所有的功能，Firefox或Opera僅有極少部份不支援，而IE瀏覽器完全沒測試且不支援大部分功能 */
-
-body {
-	width:		100%	!important;
-	min-width:	800px	!important; 
-	min-height:	600px	!important; 
+html, body {
+	width: 100%;
+	height: 99%;
+	min-width: 800px; 
+	min-height: 650px; 
 }
+
+/* 頂端bar */
 /* 頂端左上角和右上角的連結顏色 */
+#alert_beacon, /* 訊息計數 */
 #top_login a,
 #top_bar a {
-	color:		#EEEEEE	!important;
+	color: #DDDDDD !important;
+	text-shadow: 1px 1px 1px black;
 }
 #top_login a:hover,
 #top_bar a:hover {
-	color:			#CC0000	!important;
-	background:		none	!important;
-	text-shadow:	0px 0px 10px white;
+	color: white !important;
+}
+
+/* 標題 */
+#page_title {
+	color: white !important;
+	text-shadow: 1px 1px 1px black;
 }
 
 /* 噗浪怪物，可以換成自己的Logo */
 #dynamic_logo, #logo {
-	/* 圖檔網址 */
-	background:			url("");
-	/* 請依序輸入 圖檔寬度 圖檔高度 */
-	background-size:	0px 0px;
-	/* width是圖檔寬度 */
-	width:		0px		!important;
-	/* height是圖檔高度 */
-	height:		0px		!important;
-	position:	absolute	!important;
-	/* top請輸入: (600 - 圖檔高度) */
-	top:		0px		!important;
-	right:		0px		!important;
-	left:	 	auto		!important;
+	background: url("");
+	background-size: 0px 0px;
+	width: 0px !important;
+	height:	0px !important;
+	position: absolute !important;
+	top: 0px !important;
+	right: 0px !important;
+	left: auto !important;
 }
 
 /* 河道 */
 /* 河道主框架，可以換成自己的背景 */
 #timeline_holder {
-	/* 圖檔位置 */
-	background-image:	none;
-	background-color:	#EEEEEE;
-	/* 漸層背景只有webkit支援 */
-	background:			-webkit-gradient(linear, 50% 60%, 50% 100%, from(#EEEEEE), to(#AAAAAA));
-	-moz-box-shadow:	0px 0px 20px rgba(0, 0, 0, 0.9);
-	-webkit-box-shadow:	0px 0px 20px rgba(0, 0, 0, 0.9);
-	box-shadow:			0px 0px 20px rgba(0, 0, 0, 0.9);
+	margin-top: 60px !important;
+	height: 80% !important;
+	min-height: 540px; 
+	background-image: none;
+	background-color: #EEEEEE;
+	background: -webkit-gradient(linear, 50% 70%, 50% 100%, from(#EEEEEE), to(#AAAAAA));
+	-moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
+	border-top: 1px solid black !important;
+	border-bottom: 1px solid black !important;
 }
-/* 河道內整體噗浪框架 */
+/* 河道 */
+/* 整體框架 */
+#timeline_bg,
+#timeline_fg {
+	height: 78% !important;
+	min-height: 540px; 
+}
+/* 噗能出現的範圍 */
 #timeline_cnt {
-	top:		100px	!important;
-	height:		500px	!important;
+	top: 20% !important;
+	height: 65% !important;
 }
-.div_inner {
-	height:		580px 	!important;
+.block_bg,
+.block_cnt,
+.div_inner,
+.div_one_line {
+	height: 100% !important;
 }
+/* 小螢幕(<500) */
 .small_timeline,
 .small_timeline #timeline_holder {
-	height:		600px	!important;
-}
-#timeline_bg .day_start {
-	width:		0px		!important;
-	height:		0px		!important;
-	overflow:	hidden	!important;
-}
-#timeline_holder,
-#timeline_bg {
-	height:		600px	!important;
+	height: 90% !important;
+	min-height: 600px; 
 }
 /* 底部時間條 */
 #bottom_line {
-	top:			602px		!important;
-	background:		rgba(0,0,0,0.1);
-	z-index:		100;
-	border-top:		1px solid #888888 !important;
-	border-bottom:	1px solid #999999 !important;
+	top: 82px !important;
+	z-index: 100;
+	background: none;
+	border: none !important;
+}
+.div_bottom * {
+	color: black !important;
+	z-index: 800;
 }
 /* 浮動噗浪時間 */
 .evening, .night, .day, .morning {
-	top:				603px					!important;
-	border:				1px solid #888888	!important;
-	border-bottom:		none			!important;
-	background:			#999999;
-	-moz-box-shadow:	-1px -2px 3px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow:	-1px -2px 3px rgba(0, 0, 0, 0.8);
-	box-shadow:			-1px -2px 3px rgba(0, 0, 0, 0.8);
-	-moz-border-radius-topleft:		5px;
-	-moz-border-radius-topright:	5px;
-	-webkit-border-top-left-radius:	5px;
-	-webkit-border-top-right-radius:5px;
-	border-top-left-radius:			5px;
-	border-top-right-radius:		5px;
+	top: 80% !important;
+	width: 250px !important;
+	left: 40% !important;
+	padding: 10px !important;
+	margin: 0px !important;
+	background: none;
+	background-color: rgba(0,0,0,0.5) !important;
+	border: none !important;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	font-size: 2em !important;
+	font-weight: bold;
 }
 #time_show span {
-	color:		white		!important;
+	color: white !important;
 }
-/* 時間條時間 */
-.div_bottom * {
-	color:		#444444		!important;
-	z-index:	800;
+/* 每日日期文字 */
+.day_start .bottom_start {
+	color: black !important;
 }
+/* 每日分隔線 */
+.day_bg {
+	height: 97% !important;
+}
+.day_bg .div_inner {
+	background: none !important;
+	width: 0px !important;
+	border: none !important;
+	border-left: 1px solid rgba(150,150,150,0.2) !important;
+	border-right: 1px solid rgba(100,100,100,0.2) !important;
+}
+/* 通知 */
+#updater * {
+	color: white !important;
+	background: none !important;
+	text-decoration: none !important;
+	text-shadow: 1px 1px 3px black;
+}
+#updater { 
+	top: 80% !important;
+	background: none !important;
+	background-color: rgba(0,0,0,0.5) !important;
+	padding: 8px;
+	border: none !important;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 2em;
+}
+#updater:hover {
+	background-color: rgba(0,0,0,0.7) !important;
+}
+#updater b { 
+	font-size: 1em;
+}
+#update_sepa {
+	width: 0px !important;
+	border-left: 1px solid rgba(150,150,150,0.2) !important;
+	border-right: 1px solid rgba(100,100,100,0.2) !important;
+}
+
 /* 噗浪過濾按鈕 */
-#filter_tab a.off_tab {
-	color:				white				!important;
-	border:				1px solid #888888	!important;
-	border-top:			none				!important;
-	background:			#999999;
-	font-weight:		bold;
-	text-shadow:		0px 0px 3px black;
-	-moz-box-shadow:	1px 2px 3px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow:	1px 2px 3px rgba(0, 0, 0, 0.8);
-	box-shadow:			1px 2px 3px rgba(0, 0, 0, 0.8);
-	-moz-border-radius-bottomleft:		5px;
-	-moz-border-radius-bottomright:		5px;
-	-webkit-border-bottom-left-radius:	5px;
-	-webkit-border-bottom-right-radius:	5px;
-	border-bottom-left-radius:			5px;
-	border-bottom-right-radius:			5px;
-}
-#filter_tab a.off_tab:hover {
-	background:		#666666;
-	font-weight:	bold;
-	text-decoration:none;
-	color:			white				!important;
-	border:			1px solid #888888	!important;
-	border-top:		none				!important;
-}
-/* 噗浪過濾按鈕(選中) */
+#filter_tab a.off_tab,
+#filter_tab a.off_tab:hover,
 #filter_tab a.filter_selected {
-	color:				black				!important;
-	border:				1px solid #888888	!important;
-	border-top:			none				!important;
-	background:			white;
-	font-weight:		bold;
-	text-shadow:		0px 0px 3px #888888;
-	-moz-box-shadow:	1px 2px 10px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow:	1px 2px 10px rgba(0, 0, 0, 0.8);
-	box-shadow:			1px 2px 10px rgba(0, 0, 0, 0.8);
-	-moz-border-radius-bottomleft:		5px;
-	-moz-border-radius-bottomright:		5px;
-	-webkit-border-bottom-left-radius:	5px;
-	-webkit-border-bottom-right-radius:	5px;
-	border-bottom-left-radius:			5px;
-	border-bottom-right-radius:			5px;
+	color: black !important;
+	border: 1px solid black !important;
+	border-top: none !important;
+	background: #AAAAAA;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#filter_tab a.off_tab:hover,
+#filter_tab a.filter_selected {
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#AAAAAA), to(#FFFFFF));
 }
 
 /* 噗浪單體 */
@@ -249,19 +280,6 @@ body {
 	z-index:		860;
 }
 
-/* 通知 */
-#updater { 
-	top:				555px		!important;
-	border:				1px solid #222222;
-	background:			rgba(0,0,0,0.8);
-	-moz-box-shadow:	0px 0px 10px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow:	0px 0px 10px rgba(0, 0, 0, 0.8);
-	box-shadow:			0px 0px 10px rgba(0, 0, 0, 0.8);
-}
-#updater * {
-	color:		white		!important;
-}
-
 /* 向左向右回到最前按鈕 */
 .browse_button {
 	top:		470px;
@@ -330,15 +348,15 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	height:		0px		!important;
 }
 #plurk-dashboard {
-	z-index:			900;
-	position:			fixed !important;
-	left:				-120px;
-	top:				25px;
-	height:				auto;
-	width:				auto;
-	overflow:			visible;
-	background:			none;
-	border:				none;
+	z-index: 900;
+	position: fixed !important;
+	left: -120px;
+	top: 100px !important;
+	height: auto;
+	width: 0px !important;
+	overflow: visible;
+	background: none;
+	border: none;
 	-moz-border-radius:		5px;
 	-webkit-border-radius:	5px;
 	border-radius:			5px;
@@ -705,12 +723,13 @@ div.bigplurk div.time {
 .adsense,
 .dash-icon
 {
-	position:	fixed	!important;
-	top:		-1000px	!important; 
-	left:		-1000px	!important; 
-	width:		0px		!important; 
-	height:		0px		!important;
-	overflow:	hidden; 
+	position: fixed !important;
+	top: -10000px !important; 
+	left: -10000px !important; 
+	width: 0px !important; 
+	height: 0px !important;
+	border: 0px !important
+	overflow: hidden !important; 
 }
 
 /* 動畫設定，只有webkit和moz引擎支援 */
