@@ -68,8 +68,9 @@ html, body {
 }
 /* 噗能出現的範圍 */
 #timeline_cnt {
-	top: 20% !important;
+	top: 15% !important;
 	height: 65% !important;
+	padding-top: 5% !important;
 }
 .block_bg,
 .block_cnt,
@@ -227,11 +228,9 @@ html, body {
 	z-index: 850;
 }
 .p_img img {
-	width: 35px !important;
-	height: 35px !important;
-	-moz-box-shadow: 0px 0px 10px black;
-	-webkit-box-shadow: 0px 0px 10px black;
-	box-shadow: 0px 0px 10px black;
+	min-width: 35px !important;
+	min-height: 35px !important;
+	border: 1px solid #888888;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
