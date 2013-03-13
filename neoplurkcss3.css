@@ -45,7 +45,7 @@ html, body {
 }
 
 /* 河道 */
-/* 河道主框架，可以換成自己的背景 */
+/* 河道主框架 */
 #timeline_holder {
 	margin-top: 60px !important;
 	height: 80% !important;
@@ -65,6 +65,7 @@ html, body {
 #timeline_fg {
 	height: 78% !important;
 	min-height: 540px; 
+        background-image:  url(""); /* 河道背景放這 */
 }
 /* 噗能出現的範圍 */
 #timeline_cnt {
