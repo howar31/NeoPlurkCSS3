@@ -314,6 +314,7 @@ html, body {
 	overflow: hidden !important;
 	border: none !important;
 	max-height: 40px;
+	width: 99%;
 	background: none;
 	color:black;
 	-webkit-transition: max-height 1.0s ease-out 0s;
