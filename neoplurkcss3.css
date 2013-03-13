@@ -68,9 +68,9 @@ html, body {
 }
 /* 噗能出現的範圍 */
 #timeline_cnt {
-	top: 15% !important;
-	height: 60% !important;
-	padding-top: 5% !important;
+	top: 10% !important;
+	height: 70% !important;
+	padding-top: 2% !important;
 }
 .block_bg,
 .block_cnt,
