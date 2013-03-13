@@ -1,8 +1,10 @@
-/************************************************/
-/* Design by Howar31  http://about.me/howar31 	*/
-/* Version 20130312				*/
-/* Recommanded Resolution: 950x700 +		*/
-/************************************************/
+/************************************************************************************************/
+/* NeoPlurkCSS3由Howar31製作，以創用CC 姓名標示-非商業性-相同方式分享 3.0 台灣 授權條款釋出。	*/
+/* Design by Howar31	http://about.me/howar31 						*/
+/* License zhTW		http://creativecommons.org/licenses/by-nc-sa/3.0/tw/deed.zh_TW		*/
+/* License en		http://creativecommons.org/licenses/by-nc-sa/3.0/tw/deed.en		*/
+/* Version 20130312  Recommanded Resolution: 950x700+						*/
+/************************************************************************************************/
 
 html, body {
 	width: 100%;
@@ -125,8 +127,8 @@ html, body {
 	background: none !important;
 	width: 0px !important;
 	border: none !important;
-	border-left: 1px solid rgba(150,150,150,0.2) !important;
-	border-right: 1px solid rgba(100,100,100,0.2) !important;
+	border-left: 1px solid rgba(255,255,255,0.2) !important;
+	border-right: 1px solid rgba(50,50,50,0.2) !important;
 }
 /* 通知 */
 #updater * {
@@ -139,12 +141,12 @@ html, body {
 	top: 80% !important;
 	background: none !important;
 	background-color: rgba(0,0,0,0.5) !important;
-	padding: 8px;
+	padding: 5px;
 	border: none !important;
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	border-radius: 5px 5px 5px 5px;
-	font-size: 2em;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	font-size: 1em;
 }
 #updater:hover {
 	background-color: rgba(0,0,0,0.7) !important;
@@ -182,83 +184,86 @@ html, body {
 
 /* 噗浪單體 */
 .plurk .plurk_cnt {
-	-moz-box-shadow:	0px 0px 3px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow:	0px 0px 3px rgba(0, 0, 0, 0.8);
-	box-shadow:			0px 0px 3px rgba(0, 0, 0, 0.8);
-	-moz-border-radius:		5px;
-	-webkit-border-radius:	5px;
-	border-radius:			5px;
-	opacity:			0.6;
-	z-index:			825;
-	width:				110%;
+	-moz-box-shadow: 0px 0px 3px black;
+	-webkit-box-shadow: 0px 0px 3px black;
+	box-shadow: 0px 0px 3px black;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	opacity: 0.6;
+	z-index: 825;
 }
 .plurk_cnt:hover {
-	-moz-box-shadow:	0px 0px 5px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow:	0px 0px 5px rgba(0, 0, 0, 0.8);
-	box-shadow:			0px 0px 5px rgba(0, 0, 0, 0.8);
-	opacity:1;
-}
-.plurk_cnt .text_holder {
-}
-/* 噗浪者姓名 */
-.plurk_cnt .name {
-	position:		relative	!important;
-	top:			22px;
-	font-size:		1.1em;
-	text-shadow:	0px 0px 3px white;
-	z-index:		855;
-}
-.list .plurk_cnt .name {
-	position:		static		!important;
-}
-/* 噗浪者頭像 */
-.p_img {
-	position:		relative	!important;
-	top:			-15px;
-	left:			15px;
-	z-index:		850;
-}
-.p_img img {
-	width:				35px	!important;
-	height:				35px	!important;
-	-moz-box-shadow:	0px 0px 10px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow:	0px 0px 10px rgba(0, 0, 0, 0.8);
-	box-shadow:			0px 0px 10px rgba(0, 0, 0, 0.8);
-	-moz-border-radius:		5px;
-	-webkit-border-radius:	5px;
-	border-radius:			5px;
+	-moz-box-shadow: 0px 0px 5px black;
+	-webkit-box-shadow: 0px 0px 5px black;
+	box-shadow: 0px 0px 5px black;
+	opacity: 1;
 }
 /* 未讀噗浪 */
 .new .plurk_cnt {
-	-moz-box-shadow:	0px 0px 10px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow:	0px 0px 10px rgba(0, 0, 0, 0.8);
-	box-shadow:			0px 0px 10px rgba(0, 0, 0, 0.8);
-	opacity:			1;
-	border:				1px solid #888888 !important;
+	-moz-box-shadow: 0px 0px 10px black;
+	-webkit-box-shadow: 0px 0px 10px black;
+	box-shadow: 0px 0px 10px black;
+	opacity: 1;
+}
+/* 噗浪者姓名 */
+.plurk_cnt .name {
+	position: relative !important;
+	top: 22px;
+	font-size: 1.1em;
+	z-index: 855;
+}
+.list .plurk_cnt .name {
+	position: static !important;
+}
+/* 噗浪者頭像 */
+.p_img {
+	position: relative !important;
+	top: -15px;
+	left: 15px;
+	z-index: 850;
+}
+.p_img img {
+	width: 35px !important;
+	height: 35px !important;
+	-moz-box-shadow: 0px 0px 10px black;
+	-webkit-box-shadow: 0px 0px 10px black;
+	box-shadow: 0px 0px 10px black;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 /* 噗浪回文 */
 .plurk_box {
-	-moz-box-shadow:	0px 0px 5px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow:	0px 0px 5px rgba(0, 0, 0, 0.8);
-	box-shadow:			0px 0px 5px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0px 0px 5px black;
+	-webkit-box-shadow: 0px 0px 5px black;
+	box-shadow: 0px 0px 5px black;
 }
 .plurk_box .caption {
-	color:				white		!important;
-	text-shadow:		0px 0px 3px black;
-	background-color:	#CCCCCC !important;
-	font-weight:		bold;
+	color: black !important;
+	text-shadow: 0px 0px 3px white;
+	background-color: #CCCCCC !important;
+	font-weight: bold;
 }
+/* 回文內容 */
 .plurk_box .plurk_cnt {
-	-moz-box-shadow:	none;
-	-webkit-box-shadow:	none;
-	box-shadow:			none;
-	opacity:			1;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	opacity: 1;
 }
 .plurk {
 	-moz-box-shadow:	none;
 	-webkit-box-shadow:	none;
 	box-shadow:			none;
 }
+/* 回文右邊的選項 */
+.response_time {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+}
+
 /* 噗浪右邊的點點點 */
 .dots .inner {
 	background:	none;
@@ -272,9 +277,9 @@ html, body {
 	color:			#EEEEEE		!important;
 	position:		relative 	!important;
 	top:			-10px;
-	left:			10px;
+	left:			-10px;
 	text-shadow:	0px 0px 5px black;
-	font-size:		2em;
+	font-size:		2.5em;
 }
 .plurk_icon {
 	z-index:		860;
@@ -282,7 +287,7 @@ html, body {
 
 /* 向左向右回到最前按鈕 */
 .browse_button {
-	top:		470px;
+	top: 80%;
 }
 
 /* 發文訊息面板 */
@@ -721,6 +726,8 @@ div.bigplurk div.time {
 #tw_help,
 #plurk_responses h2 a,
 .adsense,
+#resp_banner_ads,
+.show,
 .dash-icon
 {
 	position: fixed !important;
@@ -782,7 +789,3 @@ body,
 ::-webkit-scrollbar-thumb:active{
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.8);
 }
-
-/* Welcome to use and modify this CSS theme.  Please do not remove the name of designer, Howar31.  Thanks. :D */
-/* 喜歡本佈景的噗友歡迎使用並自行做小修改以符合個人需求，但希望能保留原作者Howar31的署名，感謝:D */
-/* Design by Howar31  http://about.me/howar31 */
