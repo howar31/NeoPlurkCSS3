@@ -52,8 +52,13 @@ html, body {
 	height: 80% !important;
 	min-height: 540px; 
 	background-image: none;
-	background-color: #EEEEEE;
-	background: -webkit-gradient(linear, 50% 70%, 50% 100%, from(#EEEEEE), to(#AAAAAA));
+	background: #EEEEEE; /* Old browsers */
+	background: -moz-linear-gradient(top, #EEEEEE 70%, #AAAAAA 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,#EEEEEE), color-stop(100%,#AAAAAA)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #EEEEEE 70%,#AAAAAA 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #EEEEEE 70%,#AAAAAA 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #EEEEEE 70%,#AAAAAA 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #EEEEEE 70%,#AAAAAA 100%); /* W3C */
 	-moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
 	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
@@ -185,7 +190,13 @@ html, body {
 }
 #filter_tab a.off_tab:hover,
 #filter_tab a.filter_selected {
-	background: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#AAAAAA), to(#FFFFFF));
+	background: #AAAAAA; /* Old browsers */
+	background: -moz-linear-gradient(top, #AAAAAA 0%, #FFFFFF 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#AAAAAA), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #AAAAAA 0%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #AAAAAA 0%,#FFFFFF 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #AAAAAA 0%,#FFFFFF 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #AAAAAA 0%,#FFFFFF 100%); /* W3C */
 }
 
 /* 噗浪單體 */
@@ -334,7 +345,12 @@ html, body {
 	-moz-box-shadow: 0px 0px 5px black;
 	-webkit-box-shadow: 0px 0px 5px black;
 	box-shadow: 0px 0px 5px black;
-	background: -webkit-gradient(linear, 50% 0%, 50% 100%, from(rgba(50,50,50,0.2)), to(rgba(100,100,100,0.9)));
+	background: -moz-linear-gradient(top, rgba(50,50,50,0.2) 0%, rgba(100,100,100,0.9) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(50,50,50,0.2)), color-stop(100%,rgba(100,100,100,0.9))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%); /* W3C */
 }
 textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	border: 1px solid black;
