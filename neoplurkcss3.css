@@ -670,6 +670,7 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 }
 
 /* 噗浪單頁 */
+/* 噗浪單頁主題 */
 div.bigplurk h1.content {
 	-moz-border-radius-topleft: 5px;
 	-moz-border-radius-topright: 5px;
@@ -692,7 +693,6 @@ div.bigplurk div.time {
 	-webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.8);
 	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.8);
 }
-/* 噗浪單頁主題 */
 article.bigplurk.cboxAnchor {
 	position: relative !important;
 	top: -30px;
@@ -718,12 +718,20 @@ article.bigplurk.cboxAnchor {
 	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
+/* 回覆總框架 */
+#dashboard_holder {
+	position: absolute !important;
+	top: 350px;
+	left: 0px;
+	right: 0px;
+}
 /* 分享按讚資訊 */
+#plurker_info {
+	position: relative !important;
+}
 /* 噗浪單頁回覆 */
-#plurker_info,
 #plurk_responses {
 	position: relative !important;
-	top: -500px;
 }
 #plurk_responses h2 {
 	text-shadow: 0px 0px 3px black;
