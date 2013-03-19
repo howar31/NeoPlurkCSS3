@@ -54,7 +54,7 @@ html, body {
 #timeline_holder {
 	margin-top: 60px !important;
 	height: 80% !important;
-	min-height: 540px; 
+	min-height: 470px; 
 	background-image: none;
 	background: #EEEEEE; /* Old browsers */
 	background: -moz-linear-gradient(top, #EEEEEE 70%, #AAAAAA 100%); /* FF3.6+ */
@@ -74,7 +74,7 @@ html, body {
 #timeline_bg,
 #timeline_fg {
 	height: 78% !important;
-	min-height: 540px; 
+	min-height: 470px; 
         background-image:  url(""); /* 河道背景放這 */
 }
 /* 噗能出現的範圍 */
@@ -93,7 +93,7 @@ html, body {
 .small_timeline,
 .small_timeline #timeline_holder {
 	height: 90% !important;
-	min-height: 600px; 
+	min-height: 470px; 
 }
 /* 底部時間條 */
 #bottom_line {
