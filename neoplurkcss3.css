@@ -388,7 +388,7 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 }
 /* 表情符號選擇版面 */
 #emoticon_selecter {
-	top: 80px !important;
+	margin-top: 280px !important;
 }
 
 /* 個人資訊面板 */
