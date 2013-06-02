@@ -773,7 +773,8 @@ article.bigplurk.cboxAnchor {
 #resp_banner_ads,
 .show,
 .dash-icon,
-#top_header
+#top_header,
+.down_arrow
 {
 	position: fixed !important;
 	top: -10000px !important; 
