@@ -491,7 +491,6 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 
 /* 個人簡介欄 */
 #dash-profile {
-	position: absolute;
 	margin-left: 175px;
 	height: 230px;
 	-webkit-transition: height 0.5s ease-out 0.5s;
@@ -535,14 +534,14 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	-o-transition: height 0.5s ease-out 0.5s;
 }
 /* 卡馬 */
-#dash-stats h3 {
+#plurk-dashboard .dash-segment #dash-stats h3 {
 	margin: 0px 0px 0px 30px;
 	padding: 0px;
 	font-size: 2em;
 	white-space: nowrap !important;
 }
 #dash-stats h3 #karma_holder {
-	margin: 0px 0px 0px 30px;
+	margin: 0px 0px 0px 25px;
 	font-size: 1.2em;
 }
 #dash-stats h3 #karma_holder #karma {
