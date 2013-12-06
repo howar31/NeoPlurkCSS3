@@ -234,6 +234,9 @@ html, body {
 	font-size: 1.1em;
 	z-index: 855;
 }
+.plurk_cnt .text_holder .name {
+	top: 0px;
+}
 .list .plurk_cnt .name {
 	position: static !important;
 }
